@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+LOGOUT_REDIRECT_URL = 'login'
 # Application definition
 
 INSTALLED_APPS = [
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'src.doctors',
     'src.laboratory',
     'src.pharmacy',
-    'src.users',
+    'src.staff',
 
     # Third party apps
     'widget_tweaks',
