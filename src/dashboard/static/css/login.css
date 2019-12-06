@@ -106,10 +106,10 @@
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 #c02f29, 0 0 0 1em #c02e29bd, 0 0 0 3em #c02e2975, 0 0 0 5em #c02e292a;
+        box-shadow: 0 0 0 0 #c02f29, 0 0 0 1em #c02e29bd, 0 0 0 3em #c02e2975;
     }
     100% {
-        box-shadow: 0 0 0 1em #c02f29, 0 0 0 3em #c02e29bd, 0 0 0 5em #c02e2975, 0 0 0 8em #c02e292a;
+        box-shadow: 0 0 0 1em #c02f29, 0 0 0 3em #c02e29bd, 0 0 0 5em #c02e2975;
     }
 }
 

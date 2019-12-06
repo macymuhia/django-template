@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+<!-- content -->
+{% block content %}
+<a href=" {% url 'add_user' %} " class="btn btn-primary" type="submit">
+    <i class="fa fa-plus"> Add User</i>
+</a>
+<div class="card" style="margin: 5%;">
+    <div class="card-header">
+        <i class="fa fa-align-justify"></i> Users Table</div>
+    <div class="card-body">
+        <table class="table table-responsive-sm table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <!-- <th>Group</th>
+                    <th>Role</th>
+                    <th>Department</th>
+                    <th>KPIs</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td>{{user.username}}</td>
+                    <td> {{user.email}} </td>
+                    <!-- <td>{{user.group}}</td>
+                    <td>{{user.role}}</td>
+                    <td>{{user.department_id}}</td> -->
+                    <!-- <td>
+                        <span class="badge badge-success">Completed</span>
+                    </td> -->
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

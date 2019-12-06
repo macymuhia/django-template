@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% load static %}
+<!-- styles -->
+<!-- {% block styles %}
+<link rel="stylesheet" href="{% static 'css/department.css' %}"> {% endblock %} -->
+
+{% block content %}
+<!-- BUTTON TO TRIGGER THE ACTION -->
+<p>
+    <button type="button" class="btn btn-primary js-create-department">
+      <i class="icon-add"></i>
+      New Department
+    </button>
+</p>
+
+<!-- partial:index.partial.html -->
+<div id='dept-list'>
+    {% include 'partial_department_list.html' %}
+</div>
+<!-- THE MODAL WE WILL BE USING -->
+<div class="modal fade" id="modal-book">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scripts %}
+<script src="{% static 'js/create.js' %}"></script>
+{% endblock %}

@@ -9,12 +9,20 @@
 
                     <!-- Main -->
                     <li class="navigation-header"><span></span> <i class="icon-menu" title="Main pages"></i></li>
-                    <li class="active"><a href="  "><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-                    <li><a href="  "><i class="icon-tree6"></i> <span>Departments</span></a></li>
+                    <li class="active"><a href=" {% url 'dashboard' %} "><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                    <li><a href=" {% url 'department_list' %} "><i class="icon-tree6"></i> <span>Departments</span></a></li>
                     <li><a href="  "><i class="fa fa-heartbeat"></i> <span>Patients</span></a></li>
                     <li><a href="  "><i class="icon-clipboard6 "></i> <span>Triage</span></a></li>
                     <li><a href="  "><i class="fa fa-user-md"></i> <span>Doctors</span></a></li>
                     <li><a href="  "><i class="fa fa-eyedropper"></i> <span>Laboratory</span></a></li>
+                    <li>
+                        <a href="  "><i class="fa fa-medkit"></i> <span>Messages</span></a>
+                        <ul>
+                            <li><a href="">Inbox</a></li>
+                            <li><a href="">Outbox</a></li>
+                            <li><a href="">Drafts</a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="  "><i class="fa fa-medkit"></i> <span>Pharmacy</span></a>
                         <ul>
@@ -26,8 +34,8 @@
                     <li>
                         <a href=""><i class="icon-users "></i> <span>Staff</span></a>
                         <ul>
-                            <li><a href="">Groups</a></li>
-                            <li><a href="">Users</a></li>
+                            <li><a href="{% url 'group_list' %}">Groups</a></li>
+                            <li><a href="{% url 'list_users' %}">Users</a></li>
                             <li><a href="">Audit trail</a></li>
                         </ul>
                     </li>

@@ -5,7 +5,7 @@ from django.contrib.auth.models import User, Permission
 from src.staff.models import *
 
 
-class UserForm(forms.ModelForm):
+class UserForm(UserCreationForm):
 
     class Meta:
         model = User
@@ -22,7 +22,7 @@ class UserDetailsForm(forms.ModelForm):
 
     class Meta:
         model = UserProfile
-        fields = ['group', 'role']
+        fields = ['group', 'role', 'department']
 
 
 class UserProfileForm(forms.ModelForm):

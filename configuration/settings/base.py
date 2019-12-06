@@ -42,14 +42,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Own Apps
+    'src.accounts',
+    'src.communication',
     'src.dashboard',
     'src.departments',
-    'src.patients',
-    'src.triage',
     'src.doctors',
+    'src.equipments',
     'src.laboratory',
+    'src.patients',
     'src.pharmacy',
     'src.staff',
+    'src.triage',
 
     # Third party apps
     'widget_tweaks',
