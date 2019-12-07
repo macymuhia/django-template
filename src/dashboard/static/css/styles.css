@@ -1,0 +1,35 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.sidebar.sidebar-fixed .sidebar-content {
+    background-color: #9c1510;
+    top: 9%;
+}
+
+.sidebar-fixed .sidebar-content .navigation>li.active>a {
+    background-color: #000000;
+}
+
+.btn.btn-primary {
+    background-color: black;
+    outline: none;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.74);
+    outline: none;
+    border: none;
+}
+
+table tr.bg-primary {
+    background-color: black;
+}
+
+
+/* div.panel-body {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid gray;
+} */

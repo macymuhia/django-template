@@ -9,4 +9,4 @@ def index(request):
 
 @login_required(login_url="/staff/")
 def dashboard(request):
-    return render(request, 'base.html')
+    return render(request, 'dashboard.html')

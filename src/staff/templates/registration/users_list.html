@@ -4,37 +4,62 @@
 <a href=" {% url 'add_user' %} " class="btn btn-primary" type="submit">
     <i class="fa fa-plus"> Add User</i>
 </a>
-<div class="card" style="margin: 5%;">
-    <div class="card-header">
-        <i class="fa fa-align-justify"></i> Users Table</div>
-    <div class="card-body">
-        <table class="table table-responsive-sm table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <!-- <th>Group</th>
-                    <th>Role</th>
-                    <th>Department</th>
-                    <th>KPIs</th> -->
-                </tr>
-            </thead>
-            <tbody>
-                {% for user in users %}
-                <tr>
-                    <td>{{user.username}}</td>
-                    <td> {{user.email}} </td>
-                    <!-- <td>{{user.group}}</td>
-                    <td>{{user.role}}</td>
-                    <td>{{user.department_id}}</td> -->
-                    <!-- <td>
-                        <span class="badge badge-success">Completed</span>
-                    </td> -->
-                </tr>
-                {% endfor %}
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <div class="heading-elements">
+            <ul class="icons-list">
+                <li>
+                    <a data-action="collapse"></a>
+                </li>
+                <!-- <li>
+                    <a data-action="reload"></a>
+                </li> -->
+                <!-- <li>
+                    <a data-action="close"></a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
 
-            </tbody>
-        </table>
+    <div class="panel-body">
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="bg-primary">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
+                        <td>
+                            <ul class="icons-list">
+                                <li><a id="{{ department.id }}" href="table_elements.html#" data-popup="tooltip" title="Edit" data-toggle="modal" data-target="#edit_modal"><i class="icon-pencil7"></i></a></li>
+                                <li><a id="{{ department.id }}" href="table_elements.html#" data-popup="tooltip" title="Remove" data-toggle="modal" data-target="#remove_modal"><i class="icon-trash"></i></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td></td>
+                        <td>
+                            No departments
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
+
+
 {% endblock %}
