@@ -65,4 +65,9 @@ $(function() {
         return false;
     });
 
+    // $(".navigation li").click(function() {
+    //     $('.navigation li').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+
 });

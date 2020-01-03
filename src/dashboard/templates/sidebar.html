@@ -5,14 +5,13 @@
         <!-- Main navigation -->
         <div class="sidebar-category sidebar-category-visible ">
             <div class="category-content no-padding ">
-                <ul class="navigation navigation-main navigation-accordion " data-nav-type="accordion">
+                <ul class="navigation navigation-main navigation-accordion " role="accordion" data-nav-type="accordion">
 
                     <!-- Main -->
-                    <li></li>
-                    <li class="active "><a href=" {% url 'dashboard' %} "><i class="icon-home4 "></i> <span>Dashboard</span></a></li>
-                    <li><a href=" {% url 'department_list' %} "><i class="icon-tree6 "></i> <span>Departments</span></a></li>
-                    <li><a href=" {% url 'add_patient' %}"><i class="fa fa-heartbeat "></i> <span>Patients</span></a></li>
-                    <li>
+                    <li class="side-nav active"><a href=" {% url 'dashboard' %} "><i class="icon-home4 "></i> <span>Dashboard</span></a></li>
+                    <li class="side-nav"><a href=" {% url 'department_list' %} "><i class="icon-tree6 "></i> <span>Departments</span></a></li>
+                    <li class="side-nav"><a href=" {% url 'add_patient' %}"><i class="fa fa-heartbeat "></i> <span>Patients</span></a></li>
+                    <li class="side-nav">
                         <a href=" "><i class="icon-users "></i> <span>Staff</span></a>
                         <ul>
                             <li><a href="{% url 'group_list' %} ">Groups</a></li>
@@ -20,12 +19,12 @@
                             <li><a href=" ">Audit trail</a></li>
                         </ul>
                     </li>
-                    <li><a href=" "><i class=" icon-meter-fast "></i> <span>Triage</span></a></li>
-                    <li><a href=" "><i class="fa fa-user-md "></i> <span>Doctors</span></a></li>
-                    <li><a href=" "><i class="icon-lab "></i> <span>Laboratory</span></a></li>
-                    <li><a href=" "><i class="icon-coins "></i> <span>Services</span></a></li>
-                    <li><a href=" "><i class="icon-grid52 "></i> <span>Equipments</span></a></li>
-                    <li>
+                    <li class="side-nav"><a href=" "><i class=" icon-meter-fast "></i> <span>Triage</span></a></li>
+                    <li class="side-nav"><a href=" "><i class="fa fa-user-md "></i> <span>Doctors</span></a></li>
+                    <li class="side-nav"><a href=" "><i class="icon-lab "></i> <span>Laboratory</span></a></li>
+                    <li class="side-nav"><a href=" "><i class="icon-coins "></i> <span>Services</span></a></li>
+                    <li class="side-nav"><a href=" "><i class="icon-grid52 "></i> <span>Equipments</span></a></li>
+                    <li class="side-nav">
                         <a href=" "><i class="icon-bubbles4 "></i> <span>Messages</span></a>
                         <ul>
                             <li><a href=" ">Inbox</a></li>
@@ -33,7 +32,7 @@
                             <li><a href=" ">Drafts</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="side-nav">
                         <a href=" "><i class="fa fa-medkit "></i> <span>Pharmacy</span></a>
                         <ul>
                             <li><a href=" ">Medicine</a></li>
@@ -42,13 +41,13 @@
                         </ul>
                     </li>
 
-                    <li>
+                    <li class="side-nav">
                         <a href=" "><i class=" icon-calculator2 "></i> <span>Accounts</span></a>
                         <ul>
                             <li><a href=" ">Expenses</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="side-nav">
                         <a href=" "><i class="icon-graph "></i> <span>Reports</span></a>
                         <ul>
                             <li><a href=" ">Users reports</a></li>

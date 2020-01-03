@@ -23,6 +23,17 @@
     <link href="{% static 'css/colors.css' %}" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
 
+    <!-- core UI -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'popper.min.js' %}"></script>
+    <script src="{% static 'bootstrap.min.js' %}"></script>
+    <script src="{% static 'pace.min.js' %}"></script>
+    <script src="{% static 'perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'coreui.min.js' %}"></script>
+
+    <!-- core UI -->
+
     <!-- Core JS files -->
     <script type="text/javascript" src="{% static 'js/plugins/loaders/pace.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/core/libraries/jquery.min.js' %}"></script>
@@ -47,7 +58,7 @@
 
 </head>
 
-<body class="navbar-top">
+<body class="">
 
     <!-- Main navbar -->
     {% include 'navbar.html' %}
